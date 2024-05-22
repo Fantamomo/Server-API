@@ -1,2 +1,8 @@
-package at.leisner.server.handler;public class ClientAction {
+package at.leisner.server.handler;
+
+public enum ClientAction {
+    KICK,
+    IGNOR,
+    OK,
+
 }

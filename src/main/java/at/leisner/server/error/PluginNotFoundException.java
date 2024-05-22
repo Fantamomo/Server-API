@@ -1,27 +1,24 @@
 package at.leisner.server.error;
 
-import at.leisner.server.plugin.JavaPlugin;
-
-public class PluginNotEnableException extends RuntimeException {
-    private JavaPlugin plugin;
-    public PluginNotEnableException(JavaPlugin plugin) {
+public class PluginNotFoundException extends RuntimeException {
+    private final String id;
+    public PluginNotFoundException(String id) {
         super();
-        this.plugin = plugin;
+        this.id = id;
     }
-    public PluginNotEnableException(String message, JavaPlugin plugin) {
+    public PluginNotFoundException(String message, String id) {
         super(message);
-        this.plugin = plugin;
+        this.id = id;
     }
-    public PluginNotEnableException(String message, Throwable cause, JavaPlugin plugin) {
+    public PluginNotFoundException(String message, Throwable cause, String id) {
         super(message, cause);
-        this.plugin = plugin;
+        this.id = id;
     }
-    public PluginNotEnableException(Throwable cause, JavaPlugin plugin) {
+    public PluginNotFoundException(Throwable cause, String id) {
         super(cause);
-        this.plugin = plugin;
+        this.id = id;
     }
-
-    public JavaPlugin getPlugin() {
-        return plugin;
+    public String getId() {
+        return id;
     }
 }

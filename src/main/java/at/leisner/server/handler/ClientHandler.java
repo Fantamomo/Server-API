@@ -1,10 +1,10 @@
 package at.leisner.server.handler;
 
 import at.leisner.server.client.Client;
+import at.leisner.packet.Packet;
 
-import java.io.DataInputStream;
 import java.io.IOException;
 
-public interface DataHandler {
-    ClientAction handle(Client client, DataInputStream input) throws IOException;
+public interface ClientHandler {
+    void handle(Client client, Packet packet) throws IOException;
 }
