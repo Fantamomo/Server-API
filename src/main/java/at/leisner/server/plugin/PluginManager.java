@@ -10,25 +10,119 @@ import at.leisner.server.handler.Handler;
 import java.io.*;
 import java.util.*;
 
+/**
+ * The PluginManager class load, enable, disable, usw. Plugins
+ */
 public interface PluginManager {
-    void loadPlugin(File file) throws PluginNotFoundException;
+    /**
+     * Return {@link ClientHandler}[] for the type.
+     * @param type The Client type
+     * @return A list of {@link ClientHandler}s
+     */
     ClientHandler[] getTypeHandlers(String type);
+
+    /**
+     * Return a Map of {@link String} and {@link Handler} for the plugin
+     * @param plugin The plugin
+     * @return A Map of {@link String} and {@link Handler}
+     * @throws PluginNotEnableException If the plugin is not enable
+     * @throws PluginNotExistException if the plugin not exist
+     */
     Map<String, Handler> getPluginHandlerForPlugin(JavaPlugin plugin) throws PluginNotEnableException, PluginNotExistException;
+
+    /**
+     * Enable the plugin and execute the {@code JavaPlugin.onEnable()} methode
+     * @param plugin The Plugin
+     * @throws PluginWasEnableException If the plugin was already enable
+     * @throws PluginNotExistException If the plugin does not exist
+     */
     void enablePlugin(JavaPlugin plugin) throws PluginWasEnableException, PluginNotExistException;
+
+    /**
+     * Return the plugin with the id
+     * @param id The id
+     * @return The plugin
+     */
     JavaPlugin getPlugin(String id);
+
+    /**
+     * Disable the plugin and all {@link at.leisner.server.event.Listener} or {@link ClientHandler} from it.
+     * @param plugin The plugin
+     * @throws PluginNotEnableException If the plugin was already disable
+     * @throws PluginNotExistException If the plugin does not exist
+     */
     void disablePlugin(JavaPlugin plugin) throws PluginNotEnableException, PluginNotExistException;
+
+    /**
+     * Return the {@link Plugin} annotation of the plugin
+     * @param plugin The plugin
+     * @return The {@link Plugin} annotation
+     */
     Plugin getPluginInfo(JavaPlugin plugin);
+
+    /**
+     * Return true if the plugin is enabled
+     * @param plugin The plugin
+     * @return if it is enabled
+     */
     boolean isPluginEnable(JavaPlugin plugin);
-    boolean pluginExist(String id) throws PluginNotExistException;
-    @Deprecated
+
+    /**
+     * Return true if a plugin with the id exist
+     * @param id The Plugin id
+     * @return if a plugin with the id exist
+     */
+    boolean pluginExist(String id);
+
+    /**
+     * Will not do anything
+     * @param plugin
+     * @param type
+     * @param clientHandler
+     */
+    @Deprecated(forRemoval = true)
     void registerClientHandler(JavaPlugin plugin, String type, ClientHandler clientHandler);
-    @Deprecated
+
+    /**
+     * Will not do anything
+     * @param plugin
+     * @param type
+     */
+    @Deprecated(forRemoval = true)
     void unregisterClientHandler(JavaPlugin plugin, String type);
-    @Deprecated
+
+    /**
+     * Will not do anything
+     * @param plugin
+     * @param clientHandler
+     */
+    @Deprecated(forRemoval = true)
     void unregisterClientHandler(JavaPlugin plugin, ClientHandler clientHandler);
-    @Deprecated
+
+    /**
+     * Will not do anything
+     * @param plugin
+     */
+    @Deprecated(forRemoval = true)
     void unregisterAllClientHandlers(JavaPlugin plugin);
+
+    /**
+     * Return the {@link Handler} for the type
+     * @param plugin The plugin for witch the Handler will be registered
+     * @param type The Client type
+     * @return A {@link Handler} or null if the plugin has not registered the type
+     */
     Handler getHandler(JavaPlugin plugin, String type);
+
+    /**
+     * The count how many Plugins are enable
+     * @return the count of enable plugins
+     */
     int countEnablePlugins();
+
+    /**
+     * The count of all Plugin that are registered by the server
+     * @return The count of Plugins
+     */
     int countPlugins();
 }

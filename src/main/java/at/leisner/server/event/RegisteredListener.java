@@ -4,6 +4,9 @@ import at.leisner.server.plugin.Plugin;
 
 import java.lang.reflect.Method;
 
+/**
+ * Is a help class for the Server you will not need it to use
+ */
 public abstract class RegisteredListener {
 
     public abstract Listener getListener();

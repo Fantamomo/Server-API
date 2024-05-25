@@ -4,17 +4,246 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39602d30-4541-442e-ac19-b9ca5555e2cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/packet/MessagePacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/permmision/DynamicPermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/permmision/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/permmision/StaticPermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/PluginType.java" afterDir="false" />
+    <list default="true" id="39602d30-4541-442e-ac19-b9ca5555e2cd" name="Changes" comment="Add class&#10;For custom saving data to Clients">
+      <change afterPath="$PROJECT_DIR$/javadoc/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/ClientTypePacket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/CustomPacket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/DisconnectReason.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/MessagePacket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/Packet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/PacketObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/PacketType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/class-use/ClientTypePacket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/class-use/CustomPacket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/class-use/DisconnectReason.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/class-use/MessagePacket.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/class-use/Packet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/class-use/PacketObject.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/class-use/PacketType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/packet/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/Server.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/class-use/Server.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/Client.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/ClientMetaData.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/DumpClient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/Meta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/class-use/Client.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/class-use/ClientMetaData.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/class-use/DumpClient.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/class-use/Meta.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/client/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/command/Command.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/command/CommandManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/command/class-use/Command.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/command/class-use/CommandManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/command/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/command/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/command/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/PluginNotEnableException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/PluginNotExistException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/PluginNotFoundException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/PluginWasEnableException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/class-use/PluginNotEnableException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/class-use/PluginNotExistException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/class-use/PluginNotFoundException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/class-use/PluginWasEnableException.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/error/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/Cancelable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/Event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/EventHandler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/EventManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/Listener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/RegisteredListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/class-use/Cancelable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/class-use/Event.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/class-use/EventHandler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/class-use/EventManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/class-use/Listener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/class-use/RegisteredListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/ClientConnectEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/ClientDisconnectEvent.DisconnectReason.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/ClientDisconnectEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/ClientEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/ClientSendPacketEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/class-use/ClientConnectEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/class-use/ClientDisconnectEvent.DisconnectReason.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/class-use/ClientDisconnectEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/class-use/ClientEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/class-use/ClientSendPacketEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/client/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/plugin/PluginEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/plugin/PluginRegisterHandlerEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/plugin/class-use/PluginEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/plugin/class-use/PluginRegisterHandlerEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/plugin/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/plugin/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/plugin/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/server/ServerEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/server/ServerReloadEvent.ReloadReason.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/server/ServerReloadEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/server/class-use/ServerEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/server/class-use/ServerReloadEvent.ReloadReason.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/server/class-use/ServerReloadEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/server/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/server/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/event/server/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/ClientAction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/ClientHandler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/Filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/Handler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/Settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/class-use/ClientAction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/class-use/ClientHandler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/class-use/Filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/class-use/Handler.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/class-use/Settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/handler/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/Dependency.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/JavaPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/LoadType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/Plugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/PluginManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/PluginType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/class-use/Dependency.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/class-use/JavaPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/class-use/LoadType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/class-use/Plugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/class-use/PluginManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/class-use/PluginType.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/plugin/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/stream/CustomObjectInputStream.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/stream/class-use/CustomObjectInputStream.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/stream/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/stream/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/stream/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/user/Permission.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/user/PermissionManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/user/User.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/user/class-use/Permission.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/user/class-use/PermissionManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/user/class-use/User.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/user/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/user/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/user/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/util/ColorCodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/util/ExecuteIfNotExist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/util/ServerUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/util/class-use/ColorCodes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/util/class-use/ExecuteIfNotExist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/util/class-use/ServerUtil.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/util/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/util/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/at/leisner/server/util/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/copy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-21.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-22.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-23.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index-files/index-9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/jquery.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/legal/jqueryUI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/module-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/script-dir/jquery-3.6.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/search-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/serialized-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/tag-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javadoc/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/packet/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/packet/Packet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/packet/ClientTypePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/packet/ClientTypePacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/packet/CustomPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/packet/CustomPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/packet/DisconnectReason.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/packet/DisconnectReason.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/client/ClientMetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/client/ClientMetaData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/client/DumpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/client/DumpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/client/Meta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/client/Meta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/Cancelable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/Cancelable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/EventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/EventManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/RegisteredListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/RegisteredListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/client/ClientEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/client/ClientEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/ClientAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/ClientAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/permmision/DynamicPermission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/Dependency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/Dependency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/JavaPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/JavaPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/LoadType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/LoadType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/Plugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/Plugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/PluginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/PluginManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/PluginType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/PluginType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/stream/CustomObjectInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/stream/CustomObjectInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/user/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/user/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/user/PermissionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/user/PermissionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/util/ColorCodes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/util/ColorCodes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/util/ExecuteIfNotExist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/util/ExecuteIfNotExist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/util/ServerUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/util/ServerUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +263,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
@@ -51,24 +283,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.Server-API [clean].executor": "Run",
     "Maven.Server-API [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/morit/IdeaProjects/Server/Server-API/src/main/java/at/leisner/packet",
+    "last_opened_file_path": "C:/Users/morit/IdeaProjects/Server/Server-API",
     "onboarding.tips.debug.path": "C:/Users/morit/IdeaProjects/Server/Server-API/src/main/java/at/leisner/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\morit\IdeaProjects\Server\Server-API" />
       <recent name="C:\Users\morit\IdeaProjects\Server\Server-API\src\main\java\at\leisner\packet" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="at.leisner.server.error" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+        <option value="MavenRunConfiguration" />
+      </set>
+    </option>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -86,6 +331,207 @@
       <option name="presentableId" value="Default" />
       <updated>1716219231796</updated>
     </task>
+    <task id="LOCAL-00001" summary="add getType methode">
+      <option name="closed" value="true" />
+      <created>1716618375155</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618375155</updated>
+    </task>
+    <task id="LOCAL-00002" summary="make it extendend from ClientEvent&#10;Change Client to DumpClient">
+      <option name="closed" value="true" />
+      <created>1716618443274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618443274</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Change Client to DumpClient">
+      <option name="closed" value="true" />
+      <created>1716618465084</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618465084</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change Client to DumpClient">
+      <option name="closed" value="true" />
+      <created>1716618474060</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618474060</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add ClientSendPacketEvent class&#10;Make it extends from ClientEvent">
+      <option name="closed" value="true" />
+      <created>1716618508269</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618508269</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add permission methode">
+      <option name="closed" value="true" />
+      <created>1716618533735</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618533735</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updating methode Parameter&#10;Add isCommandRegistered methode">
+      <option name="closed" value="true" />
+      <created>1716618666239</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618666239</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add class&#10;Overrided the resolveClass methode for removing ClassNotDefException">
+      <option name="closed" value="true" />
+      <created>1716618743748</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618743748</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add class&#10;For Events so that Plugins can not send Packets if the shouldn't">
+      <option name="closed" value="true" />
+      <created>1716618793032</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618793032</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Will be implemented later">
+      <option name="closed" value="true" />
+      <created>1716618822085</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618822085</updated>
+    </task>
+    <task id="LOCAL-00011" summary="All class">
+      <option name="closed" value="true" />
+      <created>1716618851988</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618851988</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update Logic of class.">
+      <option name="closed" value="true" />
+      <created>1716618882139</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618882139</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add class&#10;Must is for the Packet identifizierung">
+      <option name="closed" value="true" />
+      <created>1716618932383</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618932383</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Updating Methode Parameter for MesssagePacket">
+      <option name="closed" value="true" />
+      <created>1716618969456</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716618969456</updated>
+    </task>
+    <task id="LOCAL-00015">
+      <option name="closed" value="true" />
+      <created>1716619056683</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619056683</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Used for Permission">
+      <option name="closed" value="true" />
+      <created>1716619076325</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619076325</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add the pluginType methode">
+      <option name="closed" value="true" />
+      <created>1716619102149</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619102149</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add class">
+      <option name="closed" value="true" />
+      <created>1716619119720</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619119720</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updating Version to 1.4.2-SNAPSHOT&#10;Removed dependency ServerPacketApi">
+      <option name="closed" value="true" />
+      <created>1716619174448</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619174448</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add getConnectedClientNumberSinceStart and getUserManager methode">
+      <option name="closed" value="true" />
+      <created>1716619208315</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619208315</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add class&#10;For loading|saving customClasses in Files">
+      <option name="closed" value="true" />
+      <created>1716619244823</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619244823</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add class&#10;For permission">
+      <option name="closed" value="true" />
+      <created>1716619271836</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619271836</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update">
+      <option name="closed" value="true" />
+      <created>1716619295065</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619295065</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add class&#10;For custom saving data to Clients">
+      <option name="closed" value="true" />
+      <created>1716619325218</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619325218</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add class&#10;For custom saving data to Clients">
+      <option name="closed" value="true" />
+      <created>1716619334597</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716619334597</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,5 +544,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add getType methode" />
+    <MESSAGE value="make it extendend from ClientEvent&#10;Change Client to DumpClient" />
+    <MESSAGE value="Change Client to DumpClient" />
+    <MESSAGE value="Add ClientSendPacketEvent class&#10;Make it extends from ClientEvent" />
+    <MESSAGE value="Add permission methode" />
+    <MESSAGE value="Updating methode Parameter&#10;Add isCommandRegistered methode" />
+    <MESSAGE value="Add class&#10;Overrided the resolveClass methode for removing ClassNotDefException" />
+    <MESSAGE value="Add class&#10;For Events so that Plugins can not send Packets if the shouldn't" />
+    <MESSAGE value="Will be implemented later" />
+    <MESSAGE value="All class" />
+    <MESSAGE value="Update Logic of class." />
+    <MESSAGE value="Add class&#10;Must is for the Packet identifizierung" />
+    <MESSAGE value="Updating Methode Parameter for MesssagePacket" />
+    <MESSAGE value="Add class&#10;Is for the PermissionManager" />
+    <MESSAGE value="Used for Permission" />
+    <MESSAGE value="Add the pluginType methode" />
+    <MESSAGE value="Add class" />
+    <MESSAGE value="Updating Version to 1.4.2-SNAPSHOT&#10;Removed dependency ServerPacketApi" />
+    <MESSAGE value="Add getConnectedClientNumberSinceStart and getUserManager methode" />
+    <MESSAGE value="Add class&#10;For loading|saving customClasses in Files" />
+    <MESSAGE value="Add class&#10;For permission" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="Add class&#10;For custom saving data to Clients" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add class&#10;For custom saving data to Clients" />
   </component>
 </project>

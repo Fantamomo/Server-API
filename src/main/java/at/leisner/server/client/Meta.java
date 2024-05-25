@@ -2,6 +2,10 @@ package at.leisner.server.client;
 
 import at.leisner.server.plugin.JavaPlugin;
 
+/**
+ * Class for saving MetaData in {@link ClientMetaData}
+ * You don't need it
+ */
 public class Meta {
     private Object object;
     private JavaPlugin javaPlugin;
