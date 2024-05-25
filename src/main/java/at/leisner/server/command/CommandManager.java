@@ -1,10 +1,15 @@
 package at.leisner.server.command;
 
+import at.leisner.server.plugin.JavaPlugin;
+
 public interface CommandManager {
 
-    void registerCommand(Command command);
+    void registerCommand(JavaPlugin javaPlugin, Command command);
+    void registerCommand(JavaPlugin javaPlugin, String label, Command command);
 
-    void unregisterCommand(String name);
+    void unregisterCommand(JavaPlugin javaPlugin, String label);
 
-    Command getCommand(String name);
+    Command getCommand(String label);
+    boolean isCommandRegistered(Command command);
+    boolean isCommandRegistered(String command);
 }
