@@ -15,4 +15,5 @@ public @interface Plugin {
     Dependency[] dependencies() default {};
     String name();
     String[] types() default {};
+    PluginType pluginType() default PluginType.CLIENT_HANDLER;
 }
