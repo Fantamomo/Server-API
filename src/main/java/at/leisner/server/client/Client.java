@@ -9,4 +9,6 @@ public interface Client {
     void sendPacket(Packet packet) throws IOException;
 
     void disconnect() throws IOException;
+    String getType();
+    ClientMetaData getClientMetaData();
 }
