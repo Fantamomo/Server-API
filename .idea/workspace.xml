@@ -5,38 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39602d30-4541-442e-ac19-b9ca5555e2cd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/CommandManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/error/PluginNotEnableException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/error/PluginNotExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/error/PluginNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/error/PluginWasEnableException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/Cancelable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/EventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/EventManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/event/RegisteredListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/ClientAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/Handler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/handler/Settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/Dependency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/JavaPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/LoadType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/Plugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/PluginManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/util/ColorCodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/packet/MessagePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/permmision/DynamicPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/permmision/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/permmision/StaticPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/plugin/PluginType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/packet/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/packet/Packet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/leisner/server/command/CommandManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +37,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2gjmCA4FLlpmGmQificIk0VogZE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,10 +57,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/morit/IdeaProjects/Server/Server-API/src/main/java/at/leisner/Main.java"
+    "last_opened_file_path": "C:/Users/morit/IdeaProjects/Server/Server-API/src/main/java/at/leisner/packet",
+    "onboarding.tips.debug.path": "C:/Users/morit/IdeaProjects/Server/Server-API/src/main/java/at/leisner/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\morit\IdeaProjects\Server\Server-API\src\main\java\at\leisner\packet" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="at.leisner.server.error" />
     </key>
@@ -104,5 +87,16 @@
       <updated>1716219231796</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
