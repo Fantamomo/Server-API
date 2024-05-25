@@ -1,16 +1,17 @@
 package at.leisner.server.event.client;
 
 import at.leisner.server.client.Client;
+import at.leisner.server.client.DumpClient;
 import at.leisner.server.event.Event;
 
 public abstract class ClientEvent extends Event {
-    protected Client client;
+    protected DumpClient client;
 
-    public ClientEvent(Client client) {
+    public ClientEvent(DumpClient client) {
         this.client = client;
     }
 
-    public Client getClient() {
+    public DumpClient getClient() {
         return client;
     }
 }
