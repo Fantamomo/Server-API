@@ -1,20 +1,21 @@
 package at.leisner.server.event.client;
 
 import at.leisner.server.client.Client;
+import at.leisner.server.client.DumpClient;
 
 public class ClientDisconnectEvent extends ClientEvent {
     private DisconnectReason disconnectReason = DisconnectReason.UNKNOWN;
     private Throwable throwable = null;
-    public ClientDisconnectEvent(Client client) {
+    public ClientDisconnectEvent(DumpClient client) {
         super(client);
     }
 
-    public ClientDisconnectEvent(Client client, DisconnectReason disconnectReason) {
+    public ClientDisconnectEvent(DumpClient client, DisconnectReason disconnectReason) {
         super(client);
         this.disconnectReason = disconnectReason;
     }
 
-    public ClientDisconnectEvent(Client client, Throwable throwable) {
+    public ClientDisconnectEvent(DumpClient client, Throwable throwable) {
         this(client);
         this.disconnectReason = DisconnectReason.ERROR;
         this.throwable = throwable;
