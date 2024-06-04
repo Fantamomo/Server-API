@@ -2,12 +2,11 @@ package at.leisner.server.plugin;
 
 import at.leisner.packet.Packet;
 import at.leisner.server.Server;
-import jdk.jfr.Experimental;
+import at.leisner.server.file.FileManager;
+import at.leisner.server.logging.Logger;
 
 import java.io.File;
-import java.io.ObjectInputStream;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * If you want to create a Plugin you need this class. Also your Plugin need the {@link Plugin} annotation
@@ -25,7 +24,7 @@ public abstract class JavaPlugin {
     /**
      * A private field that stores the Directory ({@link File}) for the plugin to get it use {@code this.getPluginDirectory()}
      */
-    private File fantaServerDirectory;
+    private FileManager fantaServerFileManager;
     /**
      * A private field that stores the Classloader of the Plugin. You don't need to use it
      */
@@ -83,8 +82,8 @@ public abstract class JavaPlugin {
      * Return the Directory witch is for the plugin. Please use only this Directory
      * @return The Plugin-Directory
      */
-    public final File getPluginDirectory() {
-        return fantaServerDirectory;
+    public final FileManager getPluginDirectory() {
+        return fantaServerFileManager;
     }
 
     /**
@@ -92,7 +91,7 @@ public abstract class JavaPlugin {
      * @return if the Directory was make successes
      */
     protected final boolean makePluginDirectory() {
-        return getPluginDirectory().mkdir();
+        return fantaServerFileManager.getPluginDirectory().mkdir();
     }
 
     /**
