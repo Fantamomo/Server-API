@@ -82,7 +82,11 @@ public abstract class JavaPlugin {
      * Return the Directory witch is for the plugin. Please use only this Directory
      * @return The Plugin-Directory
      */
-    public final FileManager getPluginDirectory() {
+    public final File getPluginDirectory() {
+        return fantaServerFileManager.getPluginDirectory();
+    }
+
+    public final FileManager getFileManager() {
         return fantaServerFileManager;
     }
 

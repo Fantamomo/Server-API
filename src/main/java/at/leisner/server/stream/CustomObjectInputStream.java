@@ -1,7 +1,6 @@
 package at.leisner.server.stream;
 
 import at.leisner.server.Server;
-import com.sun.jdi.Bootstrap;
 
 import java.io.IOException;
 import java.io.InputStream;

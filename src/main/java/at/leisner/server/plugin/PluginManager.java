@@ -75,38 +75,6 @@ public interface PluginManager {
     boolean pluginExist(String id);
 
     /**
-     * Will not do anything
-     * @param plugin
-     * @param type
-     * @param clientHandler
-     */
-    @Deprecated(forRemoval = true)
-    void registerClientHandler(JavaPlugin plugin, String type, ClientHandler clientHandler);
-
-    /**
-     * Will not do anything
-     * @param plugin
-     * @param type
-     */
-    @Deprecated(forRemoval = true)
-    void unregisterClientHandler(JavaPlugin plugin, String type);
-
-    /**
-     * Will not do anything
-     * @param plugin
-     * @param clientHandler
-     */
-    @Deprecated(forRemoval = true)
-    void unregisterClientHandler(JavaPlugin plugin, ClientHandler clientHandler);
-
-    /**
-     * Will not do anything
-     * @param plugin
-     */
-    @Deprecated(forRemoval = true)
-    void unregisterAllClientHandlers(JavaPlugin plugin);
-
-    /**
      * Return the {@link Handler} for the type
      * @param plugin The plugin for witch the Handler will be registered
      * @param type The Client type

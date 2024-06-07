@@ -1,8 +1,6 @@
 package at.leisner.server.event.client;
 
 import at.leisner.packet.Packet;
-import at.leisner.packet.PacketType;
-import at.leisner.server.client.Client;
 import at.leisner.server.client.DumpClient;
 
 public class ClientSendPacketEvent extends ClientEvent {
@@ -17,10 +15,9 @@ public class ClientSendPacketEvent extends ClientEvent {
     }
 
     public Packet getPacket() {
-        if (packet.packetType() == PacketType.MESSAGE_PRIVATE) return null;
         return packet;
     }
-    public PacketType getPacketType() {
-        return packet.packetType();
+    public Class<?> getPacketType() {
+        return packet.getClass();
     }
 }

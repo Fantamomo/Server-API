@@ -44,4 +44,6 @@ public interface Server {
      * @return the current {@link PermissionManager} or null
      */
     PermissionManager getUserManager(JavaPlugin javaPlugin);
+
+    void writeRawMessage(String message);
 }

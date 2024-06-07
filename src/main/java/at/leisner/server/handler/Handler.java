@@ -1,5 +1,7 @@
 package at.leisner.server.handler;
 
+import at.leisner.packet.Packet;
+import at.leisner.packet.PacketHandler;
 import at.leisner.server.client.Client;
 
 import java.util.List;
@@ -9,10 +11,19 @@ import java.util.List;
  */
 public interface Handler {
     /**
-     * Set the {@link ClientHandler}
-     * @param clientHandler The clientHandler
+     * Set the {@link PacketHandler}
+     * @param packetClass The packet for the {@link PacketHandler}
+     * @param packetHandler The PacketHandler
+     * @param <T> The Packet class
      */
-    void setClientHandler(ClientHandler clientHandler);
+    <T extends Packet> void setPacketHandler(Class<T> packetClass, PacketHandler packetHandler);
+
+    /**
+     * Set the {@link PacketHandler}
+     * @param packetClasses The packets for the {@link PacketHandler}
+     * @param packetHandler The PacketHandler
+     */
+    void setPacketHandler(List<Class<? extends Packet>> packetClasses, PacketHandler packetHandler);
 
     /**
      * Set the {@link Filter}
@@ -27,10 +38,10 @@ public interface Handler {
     void setSettings(Settings settings);
 
     /**
-     * Get the {@link ClientHandler}
+     * Get the {@link PacketHandler}
      * @return The ClientHandler
      */
-    ClientHandler getClientHandler();
+    <T> PacketHandler getPacketHandler(Class<T> packetClass);
 
     /**
      * Get the {@link Filter}
@@ -47,12 +58,12 @@ public interface Handler {
     /**
      * Disable the Handler
      */
-    void disableHandler();
+    <T extends Packet> void disableHandler(Class<T> packetClass);
 
     /**
      * Enable the Handler
      */
-    void enableHandler();
+    <T extends Packet> void enableHandler(Class<T> packetClass);
 
     /**
      * Return a list of the current Client that are connected with this Handler
@@ -64,5 +75,5 @@ public interface Handler {
      * Return if this Handler is Enable
      * @return if this Handler is Enable
      */
-    boolean isEnable();
+    <T extends Packet> boolean isEnable(Class<T> packetClass);
 }

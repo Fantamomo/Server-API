@@ -1,7 +1,6 @@
 package at.leisner.server.command;
 
 import at.leisner.server.plugin.JavaPlugin;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
@@ -34,12 +33,6 @@ public abstract class Command {
     }
 
     public String getHelp() {
-        if (javaPlugin.getPluginDirectory().getLang() != null) {
-            String helpPath = "command."+name+".help";
-            if (!helpPath.equals(javaPlugin.getPluginDirectory().getLang().get(helpPath))) {
-                return javaPlugin.getPluginDirectory().getLang().get(helpPath);
-            }
-        }
         return null;
     }
 
