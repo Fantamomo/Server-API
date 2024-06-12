@@ -1,5 +1,6 @@
 package at.leisner.server.logging;
 
+import at.leisner.server.lang.Key;
 import at.leisner.server.lang.Language;
 import at.leisner.server.util.ColorCodes;
 
@@ -25,14 +26,14 @@ public class Logger extends java.util.logging.Logger {
         this.language = language;
     }
 
-    public void lang(String key, Level level, Object... objects) {
+    public void lang(String key, Level level, Key... objects) {
         if (translateAlternativeColorCode) {
             log(level, ColorCodes.translateAlternativeColor(alternativeColorCode, language.format(key, objects)));
         } else {
             log(level, language.format(key, objects));
         }
     }
-    public void lang(String key, String defaultValue, Level level, Object... objects) {
+    public void lang(String key, String defaultValue, Level level, Key... objects) {
         if (translateAlternativeColorCode) {
             log(level, ColorCodes.translateAlternativeColor(alternativeColorCode, language.format(key, defaultValue, objects)));
         } else {
